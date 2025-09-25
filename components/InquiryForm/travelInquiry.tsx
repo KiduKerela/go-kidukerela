@@ -72,27 +72,33 @@ export default function TravelInquiryForm() {
 	const onSubmit = async (data: FormData) => {
 		setIsSubmitting(true)
 
-		// Console log the collected form data
-		console.log('Travel Inquiry Form Data:', data)
-		console.log('Form submission details:')
-		console.log('- Name:', data.name)
-		console.log('- Email:', data.email)
-		console.log('- Phone:', data.phone)
-		console.log('- Destination:', data.destination)
-		console.log('- Travel Type:', data.travelType)
-		console.log('- Number of Travelers:', data.travelers)
-		console.log('- Budget Range:', data.budget)
-		console.log('- Trip Duration:', data.duration)
-		console.log('- Travel Date:', data.travelDate)
-		console.log('- Additional Message:', data.message)
+		try {
+			const response = await fetch('/api/travel-inquiry', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(data)
+			})
 
-		// Simulate form submission delay
-		await new Promise((resolve) => setTimeout(resolve, 1000))
+			const result = await response.json()
 
-		setIsSubmitting(false)
-		toast.success(
-			'Thank you for your inquiry! We will get back to you soon.'
-		)
+			if (response.ok && result.success) {
+				toast.success(
+					'Thank you for your inquiry! We will get back to you soon.'
+				)
+				form.reset()
+			} else {
+				throw new Error(result.error || 'Failed to submit inquiry')
+			}
+		} catch (error) {
+			console.error('Submission error:', error)
+			toast.error(
+				'There was an error submitting your inquiry. Please try again.'
+			)
+		} finally {
+			setIsSubmitting(false)
+		}
 	}
 
 	return (
