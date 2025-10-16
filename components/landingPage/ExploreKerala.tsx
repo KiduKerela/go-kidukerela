@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import KeralaExplore from '@/public/kerala_img_5.jpg'
+import KeralaExplore from '@/public/kerala_image_5.jpg'
 import KeralaBoat from '@/public/kerala_image_6.jpg'
 import KeralaBeach from '@/public/kerala_image_7.jpg'
 import KeralaCultural from '@/public/kerala_image_8.jpg'
@@ -19,10 +19,9 @@ export default function ExploreKerala() {
 				<div className="grid grid-cols-2 gap-6">
 					<div className="flex flex-col">
 						<p className="mb-8 max-w-md text-lg font-extralight">
-							Lorem Ipsum is simply dummy text of the printing
-							and typesetting industry. Lorem Ipsum has been
-							the industry's standard dummy text ever since
-							the 1500s
+							Lorem Ipsum is simply dummy text of the printing and
+							typesetting industry. Lorem Ipsum has been the
+							industry's standard dummy text ever since the 1500s
 						</p>
 						<button
 							type="button"
