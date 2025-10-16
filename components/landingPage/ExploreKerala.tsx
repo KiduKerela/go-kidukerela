@@ -6,30 +6,30 @@ import KeralaCultural from '@/public/kerala_image_8.jpg'
 
 export default function ExploreKerala() {
 	return (
-		<section id="explore-kerala" className="relative py-16 text-white">
+		<section id="explore-kerala" className="relative py-12 text-white sm:py-16">
 			<Image
 				src={KeralaExplore}
 				alt="Explore Kerala"
 				fill
 				className="object-cover"
 			/>
-			<div className="relative z-10 mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8">
-				<h2 className="mb-6 text-8xl font-bold">EXPLORE KERALA</h2>
+			<div className="relative z-10 mx-auto max-w-7xl space-y-4 px-4 sm:space-y-8 sm:px-6 lg:px-8">
+				<h2 className="mb-4 text-4xl font-bold sm:mb-6 sm:text-6xl lg:text-8xl">EXPLORE KERALA</h2>
 				<hr />
-				<div className="grid grid-cols-2 gap-6">
+				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
 					<div className="flex flex-col">
-						<p className="mb-8 max-w-md text-lg font-extralight">
+						<p className="mb-6 max-w-md text-sm font-extralight sm:mb-8 sm:text-base lg:text-lg">
 							Lorem Ipsum is simply dummy text of the printing and
 							typesetting industry. Lorem Ipsum has been the
 							industry's standard dummy text ever since the 1500s
 						</p>
 						<button
 							type="button"
-							className="group relative isolation-auto z-10 flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-gray-50 bg-gray-50 px-4 py-2 text-lg text-black shadow-xl backdrop-blur-md before:absolute before:-left-full before:-z-10 before:aspect-square before:w-full before:rounded-full before:bg-emerald-500 before:transition-all before:duration-700 hover:text-gray-50 hover:before:left-0 hover:before:w-full hover:before:scale-150 hover:before:duration-700 lg:font-semibold"
+							className="group relative isolation-auto z-10 flex w-fit items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-gray-50 bg-gray-50 px-3 py-1.5 text-base text-black shadow-xl backdrop-blur-md before:absolute before:-left-full before:-z-10 before:aspect-square before:w-full before:rounded-full before:bg-emerald-500 before:transition-all before:duration-700 hover:text-gray-50 hover:before:left-0 hover:before:w-full hover:before:scale-150 hover:before:duration-700 sm:px-4 sm:py-2 sm:text-lg lg:font-semibold"
 						>
 							Explore
 							<svg
-								className="h-8 w-8 rotate-45 justify-end rounded-full border border-gray-700 p-2 text-gray-50 duration-300 ease-linear group-hover:rotate-90 group-hover:border-none group-hover:bg-gray-50"
+								className="h-6 w-6 rotate-45 justify-end rounded-full border border-gray-700 p-1.5 text-gray-50 duration-300 ease-linear group-hover:rotate-90 group-hover:border-none group-hover:bg-gray-50 sm:h-8 sm:w-8 sm:p-2"
 								viewBox="0 0 16 19"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -41,8 +41,8 @@ export default function ExploreKerala() {
 						</button>
 					</div>
 
-					<div className="relative mb-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-						<div className="relative h-64 overflow-hidden rounded-lg">
+					<div className="relative mb-4 grid grid-cols-1 gap-4 sm:mb-8 sm:gap-6 md:grid-cols-3">
+						<div className="relative h-48 overflow-hidden rounded-lg sm:h-56 md:h-64">
 							<Image
 								src={KeralaBoat}
 								alt="Boat Ride"
@@ -51,15 +51,15 @@ export default function ExploreKerala() {
 							/>
 
 							<div className="absolute inset-0 flex items-end">
-								<div className="p-4">
-									<h3 className="text-xl font-semibold">
+								<div className="p-3 sm:p-4">
+									<h3 className="text-lg font-semibold sm:text-xl">
 										Boat Ride
 									</h3>
 								</div>
 							</div>
 						</div>
 
-						<div className="relative h-64 overflow-hidden rounded-lg">
+						<div className="relative h-48 overflow-hidden rounded-lg sm:h-56 md:h-64">
 							<Image
 								src={KeralaBeach}
 								alt="Beach Life"
@@ -67,15 +67,15 @@ export default function ExploreKerala() {
 								className="object-cover"
 							/>
 							<div className="absolute inset-0 flex items-end">
-								<div className="p-4">
-									<h3 className="text-xl font-semibold">
+								<div className="p-3 sm:p-4">
+									<h3 className="text-lg font-semibold sm:text-xl">
 										Beach Life
 									</h3>
 								</div>
 							</div>
 						</div>
 
-						<div className="relative h-64 overflow-hidden rounded-lg">
+						<div className="relative h-48 overflow-hidden rounded-lg sm:h-56 md:h-64">
 							<Image
 								src={KeralaCultural}
 								alt="Cultural Stay"
@@ -83,8 +83,8 @@ export default function ExploreKerala() {
 								className="object-cover"
 							/>
 							<div className="absolute inset-0 flex items-end">
-								<div className="p-4">
-									<h3 className="text-xl font-semibold">
+								<div className="p-3 sm:p-4">
+									<h3 className="text-lg font-semibold sm:text-xl">
 										Cultural Stay
 									</h3>
 								</div>

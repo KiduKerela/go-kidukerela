@@ -5,31 +5,40 @@ import PartnerKeralaTourism from '@/public/kerala_tourism.png'
 
 export default function Partners() {
 	return (
-		<section className="bg-white py-12">
+		<section className="bg-white py-8 sm:py-12">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<h2 className="mb-8 text-center text-2xl font-bold text-gray-800">
+				<h2 className="mb-6 text-center text-xl font-bold text-gray-800 sm:mb-8 sm:text-2xl">
 					OUR PARTNERS
 				</h2>
 
-				<div className="flex flex-wrap items-center justify-center gap-8 space-x-12">
-					<Image
-						src={PartnerAirbnb}
-						alt="Expedia"
-						width={120}
-						height={40}
-					/>
-					<Image
-						src={PartnerAirIndia}
-						alt="Booking.com"
-						width={120}
-						height={40}
-					/>
-					<Image
-						src={PartnerKeralaTourism}
-						alt="Airbnb"
-						width={120}
-						height={40}
-					/>
+				<div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-12">
+					<div className="flex items-center justify-center">
+						<Image
+							src={PartnerAirbnb}
+							alt="Expedia"
+							width={100}
+							height={35}
+							className="h-auto w-20 sm:w-28 lg:w-32"
+						/>
+					</div>
+					<div className="flex items-center justify-center">
+						<Image
+							src={PartnerAirIndia}
+							alt="Booking.com"
+							width={100}
+							height={35}
+							className="h-auto w-20 sm:w-28 lg:w-32"
+						/>
+					</div>
+					<div className="flex items-center justify-center">
+						<Image
+							src={PartnerKeralaTourism}
+							alt="Airbnb"
+							width={100}
+							height={35}
+							className="h-auto w-20 sm:w-28 lg:w-32"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>

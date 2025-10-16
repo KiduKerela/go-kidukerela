@@ -32,7 +32,7 @@ const testimonials = [
 
 export default function Testimonials() {
 	return (
-		<section className="relative py-16">
+		<section className="relative py-12 sm:py-16">
 			<Image
 				src={KeraHotel}
 				alt="Kerala Hotel"
@@ -40,7 +40,7 @@ export default function Testimonials() {
 				className="object-cover"
 			/>
 			<div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<h2 className="mb-12 text-center text-3xl font-bold text-white">
+				<h2 className="mb-8 text-center text-2xl font-bold text-white sm:mb-12 sm:text-3xl">
 					Testimonials
 				</h2>
 				<InfiniteMovingCards

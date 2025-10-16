@@ -2,16 +2,16 @@ import Image from 'next/image'
 
 export default function Footer() {
 	return (
-		<footer className="bg-gray-900 py-12 text-white">
+		<footer className="bg-gray-900 py-8 text-white sm:py-12">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+				<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
 					<div>
-						<h3 className="mb-4 text-xl font-bold">Support</h3>
-						<ul className="space-y-2">
+						<h3 className="mb-3 text-lg font-bold sm:mb-4 sm:text-xl">Support</h3>
+						<ul className="space-y-1.5 sm:space-y-2">
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Help Center
 								</a>
@@ -19,7 +19,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									AirCover
 								</a>
@@ -27,7 +27,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Combating discrimination
 								</a>
@@ -35,7 +35,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Supporting people with disabilities
 								</a>
@@ -43,7 +43,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Cancellation options
 								</a>
@@ -52,12 +52,12 @@ export default function Footer() {
 					</div>
 
 					<div>
-						<h3 className="mb-4 text-xl font-bold">Company</h3>
-						<ul className="space-y-2">
+						<h3 className="mb-3 text-lg font-bold sm:mb-4 sm:text-xl">Company</h3>
+						<ul className="space-y-1.5 sm:space-y-2">
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									About Us
 								</a>
@@ -65,7 +65,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Community Blog
 								</a>
@@ -73,7 +73,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Careers
 								</a>
@@ -81,7 +81,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Privacy
 								</a>
@@ -89,7 +89,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Terms
 								</a>
@@ -98,12 +98,12 @@ export default function Footer() {
 					</div>
 
 					<div>
-						<h3 className="mb-4 text-xl font-bold">Contact</h3>
-						<ul className="space-y-2">
+						<h3 className="mb-3 text-lg font-bold sm:mb-4 sm:text-xl">Contact</h3>
+						<ul className="space-y-1.5 sm:space-y-2">
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Partnerships
 								</a>
@@ -111,7 +111,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									FAQ
 								</a>
@@ -119,7 +119,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="#"
-									className="text-gray-300 hover:text-white"
+									className="text-sm text-gray-300 hover:text-white sm:text-base"
 								>
 									Get in touch
 								</a>
@@ -128,7 +128,7 @@ export default function Footer() {
 					</div>
 
 					<div>
-						<h3 className="mb-4 text-xl font-bold">Social</h3>
+						<h3 className="mb-3 text-lg font-bold sm:mb-4 sm:text-xl">Social</h3>
 						<div className="flex space-x-4">
 							<a
 								href="#"
@@ -162,8 +162,8 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className="mt-8 border-t border-gray-800 pt-8 text-center">
-					<p className="text-gray-400">
+				<div className="mt-6 border-t border-gray-800 pt-6 text-center sm:mt-8 sm:pt-8">
+					<p className="text-sm text-gray-400 sm:text-base">
 						&copy; 2025 Kidu Kerala. All rights reserved.
 					</p>
 				</div>

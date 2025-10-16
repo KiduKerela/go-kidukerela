@@ -47,13 +47,13 @@ const newsArticles = [
 
 export default function FeatureNews() {
 	return (
-		<section id="news" className="py-16">
+		<section id="news" className="py-12 sm:py-16">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<NewsCarousel>
 					{newsArticles.map((article, index) => (
-						<NewsCarouselItem key={index} className="p-3">
+						<NewsCarouselItem key={index} className="p-2 sm:p-3">
 							<article className="overflow-hidden rounded-lg bg-white shadow-md">
-								<div className="relative h-48">
+								<div className="relative h-40 sm:h-48">
 									<Image
 										src={article.image}
 										alt={`News ${index + 1}`}
@@ -61,14 +61,14 @@ export default function FeatureNews() {
 										className="object-cover"
 									/>
 								</div>
-								<div className="p-6">
-									<p className="mb-2 text-sm text-gray-500">
+								<div className="p-4 sm:p-6">
+									<p className="mb-2 text-xs text-gray-500 sm:text-sm">
 										{article.date}
 									</p>
-									<h3 className="mb-3 text-xl font-semibold">
+									<h3 className="mb-2 text-lg font-semibold sm:mb-3 sm:text-xl">
 										{article.title}
 									</h3>
-									<p className="mb-4 text-sm text-gray-600">
+									<p className="mb-3 text-xs text-gray-600 sm:mb-4 sm:text-sm">
 										{article.excerpt}
 									</p>
 								</div>
