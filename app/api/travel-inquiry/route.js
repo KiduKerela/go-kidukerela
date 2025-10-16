@@ -1,6 +1,8 @@
+export const runtime = 'edge'
+
 import { NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase'
-import { addToGoogleSheets } from '@/lib/googleSheets'
+import { addToGoogleSheetsEdge } from '@/lib/googleSheetsEdge'
 
 export async function POST(request) {
   try {
@@ -47,18 +49,18 @@ export async function POST(request) {
         }
       } catch (error) {
         console.error('Supabase connection error:', error.message)
-        // Continue to try Google Sheets even if Supabase fails
       }
     } else {
       console.warn('Supabase not configured')
     }
 
-    // Sync to Google Sheets
-    const sheetsResult = await addToGoogleSheets(body)
+    // Sync to Google Sheets (non-blocking)
+    const sheetsResult = await addToGoogleSheetsEdge(body)
     console.log(sheetsResult);
 
     if (!sheetsResult.success) {
       console.warn('Google Sheets sync failed:', sheetsResult.error)
+      // Don't fail the request if Google Sheets fails
     }
 
     // Return success if at least one storage method worked
