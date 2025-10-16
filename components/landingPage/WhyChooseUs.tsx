@@ -2,7 +2,7 @@ import { Shield, Award, Clock } from 'lucide-react'
 
 export default function WhyChooseUs() {
 	return (
-		<section className="bg-gray-50 py-16">
+		<section className="mt-32 py-16 md:mt-40">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<h2 className="mb-12 text-center text-3xl font-bold text-gray-800">
 					WHY CHOOSE US?
@@ -17,9 +17,8 @@ export default function WhyChooseUs() {
 							Competitive Prices
 						</h3>
 						<p className="text-gray-600">
-							With over 500 suppliers and the purchasing power
-							of our planning and supporting industry, Lorem
-							Ipsum
+							With over 500 suppliers and the purchasing power of
+							our planning and supporting industry, Lorem Ipsum
 						</p>
 					</div>
 
@@ -31,9 +30,8 @@ export default function WhyChooseUs() {
 							Award Winning
 						</h3>
 						<p className="text-gray-600">
-							With over 500 suppliers and the purchasing power
-							of our planning and supporting industry, Lorem
-							Ipsum
+							With over 500 suppliers and the purchasing power of
+							our planning and supporting industry, Lorem Ipsum
 						</p>
 					</div>
 
@@ -45,9 +43,8 @@ export default function WhyChooseUs() {
 							Seamless Experience
 						</h3>
 						<p className="text-gray-600">
-							With over 500 suppliers and the purchasing power
-							of our planning and supporting industry, Lorem
-							Ipsum
+							With over 500 suppliers and the purchasing power of
+							our planning and supporting industry, Lorem Ipsum
 						</p>
 					</div>
 				</div>

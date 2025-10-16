@@ -17,7 +17,7 @@ export default function HeroSection() {
 				<div className="absolute inset-0"></div>
 			</div>
 
-			<div className="absolute z-10 mx-auto  h-fit max-w-2xl rounded-2xl bg-white p-8 text-gray-800">
+			<div className="absolute bottom-0 left-1/2 z-10 w-full max-w-2xl -translate-x-1/2 translate-y-1/2 rounded-2xl bg-white p-8 text-gray-800 shadow-xl">
 
 				<h1 className="mb-4 text-3xl font-bold text-blue-600">
 					Good Morning!
