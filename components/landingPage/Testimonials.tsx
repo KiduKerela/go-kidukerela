@@ -1,4 +1,6 @@
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-card'
+import KeraHotel from '@/public/kerala_image_9.jpg'
+import Image from 'next/image'
 
 const testimonials = [
 	{
@@ -30,9 +32,15 @@ const testimonials = [
 
 export default function Testimonials() {
 	return (
-		<section className="bg-gray-50 py-16">
-			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<h2 className="mb-12 text-center text-3xl font-bold text-gray-800">
+		<section className="relative py-16">
+			<Image
+				src={KeraHotel}
+				alt="Kerala Hotel"
+				fill
+				className="object-cover"
+			/>
+			<div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<h2 className="mb-12 text-center text-3xl font-bold text-white">
 					Testimonials
 				</h2>
 				<InfiniteMovingCards
