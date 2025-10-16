@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import PartnerAirbnb from '@/public/Airbnb_Logo_1.png'
+import PartnerAirIndia from '@/public/Air India_Logo_0.svg'
+import PartnerKeralaTourism from '@/public/kerala_tourism.png'
 
 export default function Partners() {
 	return (
@@ -10,46 +13,22 @@ export default function Partners() {
 
 				<div className="flex flex-wrap items-center justify-center gap-8 space-x-12">
 					<Image
-						src="/partner-expedia.png"
+						src={PartnerAirbnb}
 						alt="Expedia"
 						width={120}
 						height={40}
-						className="grayscale transition-all hover:grayscale-0"
 					/>
 					<Image
-						src="/partner-booking.png"
+						src={PartnerAirIndia}
 						alt="Booking.com"
 						width={120}
 						height={40}
-						className="grayscale transition-all hover:grayscale-0"
 					/>
 					<Image
-						src="/partner-airbnb.png"
+						src={PartnerKeralaTourism}
 						alt="Airbnb"
 						width={120}
 						height={40}
-						className="grayscale transition-all hover:grayscale-0"
-					/>
-					<Image
-						src="/partner-trivago.png"
-						alt="Trivago"
-						width={120}
-						height={40}
-						className="grayscale transition-all hover:grayscale-0"
-					/>
-					<Image
-						src="/partner-priceline.png"
-						alt="Priceline"
-						width={120}
-						height={40}
-						className="grayscale transition-all hover:grayscale-0"
-					/>
-					<Image
-						src="/partner-kayak.png"
-						alt="Kayak"
-						width={120}
-						height={40}
-						className="grayscale transition-all hover:grayscale-0"
 					/>
 				</div>
 			</div>
