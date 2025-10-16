@@ -6,7 +6,7 @@ import KeralaCultural from '@/public/kerala_image_8.jpg'
 
 export default function ExploreKerala() {
 	return (
-		<section className="relative py-16 text-white">
+		<section id="explore-kerala" className="relative py-16 text-white">
 			<Image
 				src={KeralaExplore}
 				alt="Explore Kerala"

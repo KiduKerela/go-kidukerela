@@ -4,7 +4,7 @@ import KeralaStay from '@/public/kerala_image_4.jpg'
 
 export default function Newsletter() {
 	return (
-		<section className="bg-white py-16">
+		<section id="contact" className="bg-white py-16">
 			<div className="mx-auto max-w-7xl">
 				<div className="flex flex-col items-center overflow-hidden rounded-2xl bg-gray-100 md:flex-row">
 					<div className="md:w-2/5">

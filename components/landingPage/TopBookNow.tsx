@@ -55,7 +55,7 @@ const properties = [
 
 export default function TopBookNow() {
 	return (
-		<section className="bg-gray-50 py-16">
+		<section id="top-booking" className="bg-gray-50 py-16">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<h2 className="mb-12 text-center text-3xl font-bold text-gray-800">
 					TOP BOOK NOW
