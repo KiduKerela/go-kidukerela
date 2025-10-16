@@ -1,60 +1,53 @@
 import Image from 'next/image'
 import { Star } from 'lucide-react'
+import KeralaProperty1 from '@/public/kerala_image_10.jpg'
 
 const properties = [
 	{
-		image: '/property1.jpg',
+		image: KeralaProperty1,
 		title: 'The Blueberry',
-		price: '$30.00',
 		rating: 4.8,
 		location: 'Los Angeles'
 	},
 	{
-		image: '/property2.jpg',
+		image: KeralaProperty1,
 		title: 'Sea Breeze',
-		price: '$30.00',
 		rating: 4.8,
 		location: 'New York'
 	},
 	{
-		image: '/property3.jpg',
+		image: KeralaProperty1,
 		title: 'The Orchard',
-		price: '$30.00',
 		rating: 4.8,
 		location: 'California'
 	},
 	{
-		image: '/property4.jpg',
+		image: KeralaProperty1,
 		title: 'Lavendel',
-		price: '$30.00',
 		rating: 4.8,
 		location: 'San Francisco'
 	},
 	{
-		image: '/property5.jpg',
+		image: KeralaProperty1,
 		title: 'Green Gardens',
-		price: '$30.00',
 		rating: 4.8,
 		location: 'Las Vegas'
 	},
 	{
-		image: '/property6.jpg',
+		image: KeralaProperty1,
 		title: 'Countryside',
-		price: '$30.00',
 		rating: 4.8,
 		location: 'New York'
 	},
 	{
-		image: '/property7.jpg',
+		image: KeralaProperty1,
 		title: 'Green Landscape',
-		price: '$30.00',
 		rating: 4.8,
 		location: 'California'
 	},
 	{
-		image: '/property8.jpg',
+		image: KeralaProperty1,
 		title: 'City View',
-		price: '$30.00',
 		rating: 4.8,
 		location: 'Los Angeles'
 	}
@@ -81,7 +74,7 @@ export default function TopBookNow() {
 									fill
 									className="object-cover"
 								/>
-								<div className="absolute right-3 top-3 rounded bg-black bg-opacity-50 px-2 py-1 text-sm text-white">
+								<div className="bg-opacity-50 absolute top-3 right-3 rounded bg-black px-2 py-1 text-sm text-white">
 									{property.rating}
 								</div>
 							</div>
@@ -92,26 +85,15 @@ export default function TopBookNow() {
 								<p className="mb-2 text-sm text-gray-600">
 									{property.location}
 								</p>
-								<div className="flex items-center justify-between">
-									<span className="font-bold text-blue-600">
-										{property.price}
+								<div className="flex items-center space-x-1">
+									<Star className="h-4 w-4 fill-current text-yellow-400" />
+									<span className="text-sm text-gray-600">
+										{property.rating}
 									</span>
-									<div className="flex items-center space-x-1">
-										<Star className="h-4 w-4 fill-current text-yellow-400" />
-										<span className="text-sm text-gray-600">
-											{property.rating}
-										</span>
-									</div>
 								</div>
 							</div>
 						</div>
 					))}
-				</div>
-
-				<div className="mt-8 text-center">
-					<button className="font-medium text-blue-600 hover:underline">
-						See All
-					</button>
 				</div>
 			</div>
 		</section>
